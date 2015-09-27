@@ -1,6 +1,6 @@
 {
   "name": "rsvg-path",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple React component for SVG paths.",
   "main": "lib/path.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/SethDavenport/rsvg-path",
   "dependencies": {
     "fgeo": "^1.0.4",
-    "ramda": "^0.15.1",
+    "ramda": "^0.17.1",
     "react": "^0.13.3"
   },
   "devDependencies": {

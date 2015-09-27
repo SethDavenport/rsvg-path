@@ -5,7 +5,9 @@ A simple React component for SVG paths.
 Use it like this:
 
 ```javascript
-export default class MyPath extends React.Component {
+import * as RSVG from 'rsvg-path';
+
+class MyPath extends React.Component {
   render() {
     const path = {
       vertices: [
@@ -15,8 +17,8 @@ export default class MyPath extends React.Component {
       ]
     }
 
-    return <RSVGPath geometry={path}
-      segmentType="linear"/>;
+    return <RSVG.Path geometry={path}
+      segmentType={RSVG.SegmentTypes.LINEAR}/>;
   }
 };
 ```

@@ -2,9 +2,14 @@
 import React from 'react';
 import R from 'ramda';
 import fgeo from 'fgeo';
-import { SegmentTypes } from './segment-types';
 
-export default class Path extends React.Component {
+export const SegmentTypes = {
+  LINEAR: 'linear',
+  ARC: 'arc',
+  Q_BEZIER: 'q-bezier'
+};
+
+export class Path extends React.Component {
   render () {
     return (<path
       d={_getDrawCommands(
@@ -47,9 +52,13 @@ function _getDrawCommands(geometry, segmentType, arcRadius) {
 }
 
 function _getDrawCommandsForCell(geometry, startFn, drawFn) {
-  var drawCommands = R.reduceIndexed(
-    function (acc, v, i) {
-      return acc + (acc ? drawFn(v, i) : startFn(v));
+  let i = 0;
+
+  var drawCommands = R.reduce(
+    function (acc, v) {
+      let result = acc + (acc ? drawFn(v, i) : startFn(v));
+      i++;
+      return result;
     },
     '',
     geometry.vertices);

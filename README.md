@@ -1,6 +1,6 @@
 # rsvg-path
 
-A simple react component for SVG paths.
+A simple React component for SVG paths.
 
 Use it like this:
 
@@ -14,9 +14,9 @@ export default class MyPath extends React.Component {
         { x: 10, y: 10}
       ]
     }
-    
+
     return <RSVGPath geometry={path}
-      constructionMode="linear"/>;
+      segmentType="linear"/>;
   }
 };
 ```

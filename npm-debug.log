@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'link', 'rsvg-path' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose install where,what [ '/Users/Seth/.npm/lib', [ 'rsvg-path' ] ]
+5 verbose cache add [ 'rsvg-path', null ]
+6 verbose cache add name=undefined spec="rsvg-path" args=["rsvg-path",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'rsvg-path',
+7 verbose parsed url   path: 'rsvg-path',
+7 verbose parsed url   href: 'rsvg-path' }
+8 silly lockFile 6b9fe0b9-rsvg-path rsvg-path
+9 verbose lock rsvg-path /Users/Seth/.npm/6b9fe0b9-rsvg-path.lock
+10 silly lockFile 6b9fe0b9-rsvg-path rsvg-path
+11 silly lockFile 6b9fe0b9-rsvg-path rsvg-path
+12 verbose addNamed [ 'rsvg-path', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 8fc3f1c3-rsvg-path rsvg-path@
+15 verbose lock rsvg-path@ /Users/Seth/.npm/8fc3f1c3-rsvg-path.lock
+16 silly addNameRange { name: 'rsvg-path', range: '*', hasData: false }
+17 verbose request where is /rsvg-path
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 407b50cfb25edc97
+20 verbose url raw /rsvg-path
+21 verbose url resolving [ 'https://registry.npmjs.org/', './rsvg-path' ]
+22 verbose url resolved https://registry.npmjs.org/rsvg-path
+23 verbose request where is https://registry.npmjs.org/rsvg-path
+24 info trying registry request attempt 1 at 12:44:42
+25 http GET https://registry.npmjs.org/rsvg-path
+26 http 404 https://registry.npmjs.org/rsvg-path
+27 silly registry.get cb [ 404,
+27 silly registry.get   { 'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '2',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Sun, 27 Sep 2015 16:44:43 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-ord1728-ORD',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1443372283.067026,VS0,VE153' } ]
+28 silly lockFile 8fc3f1c3-rsvg-path rsvg-path@
+29 silly lockFile 8fc3f1c3-rsvg-path rsvg-path@
+30 error 404 Not Found
+30 error 404
+30 error 404 'rsvg-path' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Darwin 14.5.0
+32 error command "node" "/usr/local/bin/npm" "link" "rsvg-path"
+33 error cwd /Users/Seth/github/rsvg-path
+34 error node -v v0.10.32
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]

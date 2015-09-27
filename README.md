@@ -7,7 +7,7 @@ Use it like this:
 ```javascript
 export default class MyPath extends React.Component {
   render() {
-    const geometry = {
+    const path = {
       vertices: [
         { x: 0, y: 0},
         { x: 0, y: 10},

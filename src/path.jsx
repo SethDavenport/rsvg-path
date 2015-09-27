@@ -15,7 +15,7 @@ export default class Path extends React.Component {
   }
 };
 
-function _getDrawCommands(geometry, constructionMode, arcRadius) {
+function _getDrawCommands(geometry, segmentType, arcRadius) {
   var startFn;
   var drawFn;
 

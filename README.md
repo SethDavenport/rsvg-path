@@ -20,12 +20,11 @@ const path = {
     { x: 60, y: 40 }]
 };
 
-  React.render(
-    <RSVG.Path
-      geometry={path}
-      segmentType={RSVG.SegmentTypes.Q_BEZIER}/>,
-    document.getElementById('stage'));
-});
+React.render(
+  <RSVG.Path
+    geometry={path}
+    segmentType={RSVG.SegmentTypes.Q_BEZIER}/>,
+  document.getElementById('stage'));
 ```
 
 With this:

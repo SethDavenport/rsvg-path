@@ -5,28 +5,39 @@ A simple React component for SVG paths.
 Use it like this:
 
 ```javascript
-import * as RSVG from 'rsvg-path';
+const RSVG = import('rsvg-path');
 
-class MyPath extends React.Component {
-  render() {
-    const path = {
-      vertices: [
-        { x: 0, y: 0},
-        { x: 0, y: 10},
-        { x: 10, y: 10}
-      ]
-    }
-
-    return <RSVG.Path geometry={path}
-      segmentType={RSVG.SegmentTypes.LINEAR}/>;
-  }
+const path = {
+  vertices: [
+    { x: 40, y: 10 },
+    { x: 40, y: 30 },
+    { x: 40, y: 40 },
+    { x: 50, y: 10 },
+    { x: 50, y: 30 },
+    { x: 50, y: 40 },
+    { x: 60, y: 10 },
+    { x: 60, y: 30 },
+    { x: 60, y: 40 }]
 };
+
+  React.render(
+    <RSVG.Path
+      geometry={path}
+      segmentType={RSVG.SegmentTypes.Q_BEZIER}/>,
+    document.getElementById('stage'));
+});
 ```
 
-To get this SVG:
+With this:
 
 ```svg
-<path d="M 0 0 L 0 10 L 10 10 L 0 0"/>
+<svg id="stage"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="xMidYMid slice"/>
 ```
 
-Also has support for paths with arc or quadratic bezier segments (docs TODO).
+To get this:
+
+http://codepen.io/SethDavenport/full/dYGVjZ/
+
+Also has support for paths with arc or linear segments (docs TODO).
